@@ -1,9 +1,9 @@
 Here is the updated `README.md` tailored to your new 90-minute, 3.25 loss run using FineWeb-Edu.
 
-````markdown
 # NanoGPT-124M — In a Cave With a Box of Scraps
 
-This is an effort to speedrun training NanoGPT (GPT-2 124M) on a **single consumer RTX 4090** from scratch using **FineWeb-Edu** data. The goal was to hit < 3.28 validation loss as fast as possible.
+This is an effort to speedrun training NanoGPT (GPT-2 124M) on a **single consumer RTX 4090** from scratch using **FineWeb-Edu** data.
+The goal was to hit < 3.28 validation loss as fast as possible.
 
 **We achieved 3.25 loss in just 90 minutes.**
 
