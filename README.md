@@ -2,8 +2,8 @@ Here is the updated `README.md` tailored to your new 90-minute, 3.25 loss run us
 
 # NanoGPT-124M — In a Cave With a Box of Scraps
 
-This is an effort to speedrun training NanoGPT (GPT-2 124M) on a **single consumer RTX 4090** from scratch using **FineWeb-Edu** data.
-The goal was to hit < 3.28 validation loss as fast as possible.
+This is an effort to speedrun training NanoGPT (GPT-2 124M) on a **single consumer RTX 4090** from scratch using **FineWeb-Edu** or **FineWeb10** data.
+The goal was to hit < 3.28 validation loss as fast as possible. Lower is fine.
 
 **We achieved 3.25 loss in just 90 minutes.**
 
@@ -17,7 +17,7 @@ I have provided all training and inference code here, along with the trained mod
 **From-scratch NanoGPT / GPT-2 124M training** on single-GPU consumer hardware.
 
 **THE GOAL:**
-1. **Achieve validation loss ≤ 3.28** (OpenAI GPT-2 baseline) on a GPT-2 124M(-ish) model trained from scratch.
+1. **Achieve validation loss ≤ 3.28** (OpenAI GPT-2 baseline) on a GPT-2 124M(-ish) model trained from scratch as fast as possible.
 2. Use **single-GPU, consumer hardware** (RTX 4090).
 3. Use high-quality open data (**FineWeb-Edu**).
 
